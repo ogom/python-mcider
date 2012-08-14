@@ -1,6 +1,10 @@
 Mcider
 ======
 
+[![Build Status](https://secure.travis-ci.org/ogom/python-mcider.png?branch=master)](http://travis-ci.org/ogom/python-mcider)
+
+![mcider](https://github.com/ogom/python-mcider/raw/master/mcider.png)
+
 Mcider is to convert markdown into slideshow.
 
 
