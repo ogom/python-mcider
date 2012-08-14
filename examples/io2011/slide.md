@@ -16,6 +16,7 @@ Title bottom
 ---
 
 ### Title top
+#### article class is none
 
 #### Sub title
 
@@ -46,33 +47,6 @@ ___
 ### article class is fill
 
 <img src='images/sky.jpg'>
-
-
----
-
-Extensions
-----------
-
----
-
-### Fenced Code Blocks
-
-~~~~{.python}
-# python code
-~~~~
-
-~~~~.html
-<p>HTML Document</p>
-~~~~
-
----
-
-### Tables
-
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
 
 ---
 
