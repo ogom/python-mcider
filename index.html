@@ -32,13 +32,13 @@
       <section>
         <h1>Mcider</h1>
 
+<p>Mcider is to convert markdown into slideshow.</p>
+
 <p><a href="http://travis-ci.org/ogom/python-mcider"><img src="https://secure.travis-ci.org/ogom/python-mcider.png?branch=master" alt="Build Status"></a></p>
 
 <p><img src="https://github.com/ogom/python-mcider/raw/master/mcider.png" alt="mcider"></p>
 
-<p>Mcider is to convert markdown into slideshow.</p>
-
-<h3>Installation</h3>
+<h2>Installation</h2>
 
 <pre><code>$ pip install mcider
 </code></pre>
@@ -48,32 +48,56 @@
 <pre><code>$ easy_install mcider
 </code></pre>
 
-<h3>Usage</h3>
+<p>from source</p>
 
-<pre><code>usage: mcider [-h] [--theme THEME] [--output FILE] FILE
-
-Mcider is to convert markdown into slideshow.
-
-positional arguments:
-  FILE                  Contents of the markdown.
-
-optional arguments:
-  -h, --help            show this help message and exit
-  --theme THEME, -t THEME
-                        Theme of the slide. (io2012, io2011)
-  --output FILE, -o FILE
-                        File to output slide.
+<pre><code>$ git clone https://github.com/ogom/python-mcider.git
+$ cd python-mcider
+$ make install
 </code></pre>
 
-<h3>Uses</h3>
+<h2>Usage</h2>
+
+<p>Simple, the file is output to the same directory as the markdown.</p>
+
+<pre><code>$ mcider ./slide.md
+</code></pre>
+
+<p>If you wanted to display the WEB browser with the option of <code>-b</code>.</p>
+
+<pre><code>$ mcider ./slide.md -b
+</code></pre>
+
+<p>The output destination can be changed in the options <code>-o</code>.</p>
+
+<pre><code>$ mcider ./slide.md -o /tmp/my.html
+</code></pre>
+
+<p>Theme is provided  io2012 and io2011. Select the option <code>-t</code>.</p>
+
+<pre><code>$ mcider ./slide.md -t io2011
+</code></pre>
+
+<p>See also <code>mcider --help</code>.</p>
+
+<h2>Examples</h2>
+
+<p>TODO: io2012 and io2011.</p>
+
+<h2>Tests</h2>
+
+<p>make test</p>
+
+<h2>Uses</h2>
 
 <ul>
 <li><a href="https://github.com/waylan/Python-Markdown">Python-Markdown</a></li>
 <li><a href="http://code.google.com/p/io-2012-slides/">HTML5 slide template for Google I/O 2012</a></li>
 <li><a href="http://code.google.com/p/html5slides/">HTML5 slide template for Google I/O 2011</a></li>
-</ul><h3>Licence</h3>
+</ul><h2>Licence</h2>
 
-<p><a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a></p>
+<ul>
+<li><a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a></li>
+</ul>
       </section>
       <footer>
         <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
