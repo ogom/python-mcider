@@ -1,7 +1,7 @@
-/*
-  ogom modifications
-     * Change slide_config path.
-*/
+/**
+ * ogom modifications
+ *   Change slide_config path.
+ */
 
 require(['order!slide_config', 'order!modernizr.custom.45394',
          'order!prettify/prettify', 'order!hammer', 'order!slide-controller',
