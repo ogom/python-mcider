@@ -34,11 +34,14 @@
 
 <p>Mcider is to convert markdown into slideshow.</p>
 
-<p><a href="http://travis-ci.org/ogom/python-mcider"><img src="https://secure.travis-ci.org/ogom/python-mcider.png?branch=master" alt="Build Status"></a></p>
-
 <p><img src="https://github.com/ogom/python-mcider/raw/master/mcider.png" alt="mcider"></p>
 
-<h2>Installation</h2>
+<h3>Examples of themes</h3>
+
+<ul>
+<li><a href="http://ogom.github.com/mcider/examples/io2012/slide.html">Google I/O 2012</a></li>
+<li><a href="http://ogom.github.com/mcider/examples/io2011/slide.html">Google I/O 2011</a></li>
+</ul><h2>Installation</h2>
 
 <pre><code>$ pip install mcider
 </code></pre>
@@ -77,9 +80,38 @@ $ make install
 <pre><code>$ mcider ./slide.md -t io2011
 </code></pre>
 
+<p><a href="http://freewisdom.org/projects/python-markdown/Available_Extensions">Extensions</a> of markdown is the options <code>-x</code>.</p>
+
+<pre><code>$ mcider ./slide.md -x fenced_code tables
+</code></pre>
+
 <p>See also <code>mcider --help</code>.</p>
 
-<h2>Examples</h2>
+<h2>How to use</h2>
+
+<h3>Output Hints</h3>
+
+<p>Separates the slide is <code>---</code> or <code>___</code> or <code>***</code> be returned to hr tab at markdown.<br>
+io2012 or io2011 of the theme to change the class of article in the horizon. </p>
+
+<table>
+<tr>
+<th>horizon</th>
+<th>article class</th>
+</tr>
+<tr>
+<td>---</td>
+<td>none</td>
+</tr>
+<tr>
+<td>___</td>
+<td>smaller</td>
+</tr>
+<tr>
+<td>***</td>
+<td>fill</td>
+</tr>
+</table><h2>Examples</h2>
 
 <h3>Theme of io2012</h3>
 
@@ -279,7 +311,10 @@ There is more text just underneath.
 
 <h2>Tests</h2>
 
-<p>make test</p>
+<pre><code>$ make test
+</code></pre>
+
+<p><a href="http://travis-ci.org/ogom/python-mcider"><img src="https://secure.travis-ci.org/ogom/python-mcider.png?branch=master" alt="Build Status"></a></p>
 
 <h2>Uses</h2>
 
