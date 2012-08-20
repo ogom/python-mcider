@@ -7,8 +7,8 @@ Mcider is to convert markdown into slideshow.
 
 ### Examples of themes
 
-* [Google I/O 2012](http://ogom.github.com/mcider/examples/io2012/slide.html)
-* [Google I/O 2011](http://ogom.github.com/mcider/examples/io2011/slide.html)
+* [Google I/O 2012](http://ogom.github.com/python-mcider/examples/io2012/slide.html)
+* [Google I/O 2011](http://ogom.github.com/python-mcider/examples/io2011/slide.html)
 
 
 ## Installation
