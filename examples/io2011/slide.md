@@ -1,82 +1,30 @@
-Slide title
-===========
-
-author: your name
+I/O 2011 slide example
+======================
 
 ---
 
-Title center
-============
+### Simple slide with header and text
 
----
+This is a slide with just text. This is a slide with just text.  
+This is a slide with just text. This is a slide with just text.  
+This is a slide with just text. This is a slide with just text.  
 
-Title bottom
-------------
-
----
-
-### Title top
-#### article class is none
-
-#### Sub title
-
-Place to write
-New line
-
-    Enclosure
-
-<q>Quotation</q>
+There is more text just underneath.
 
 ___
 
-### Next page
-#### article class is smaller
+### Simple slide with header and text (small font)
 
-#### List
-* First line
-* Second line
-* Third  line
+This is a slide with just text. This is a slide with just text.  
+This is a slide with just text. This is a slide with just text.  
+This is a slide with just text. This is a slide with just text.  
 
-#### Quote
-> First row
->> Second row
->>> Third row
+There is more text just underneath.
 
 ***
 
-### article class is fill
+### Image filling the slide (with optional header)
 
-<img src='images/sky.jpg'>
+![syaraku](images/syaraku_eye.jpg)
 
----
-
-Extensions
-----------
-
----
-
-### Fenced Code Blocks
-
-~~~~{.python}
-# python code
-~~~~
-
-~~~~.html
-<p>HTML Document</p>
-~~~~
-
----
-
-### Tables
-
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
-
----
-
-Thank you!
-==========
-
-[https://github.com/ogom](https://github.com/ogom)
+There is more text just underneath.

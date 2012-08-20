@@ -10,11 +10,11 @@
   URL: http://code.google.com/p/html5slides/
 */
 
-/*
-  ogom modifications
-     * Change the css and js path.
-     * Do not load the addFontStyle.
-*/
+/**
+ * ogom modifications
+ *   Change the css and js path.
+ *   Do not load the addFontStyle.
+ */
 
 var PERMANENT_URL_PREFIX = 'http://html5slides.googlecode.com/svn/trunk/';
 
