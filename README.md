@@ -3,9 +3,12 @@ Mcider
 
 Mcider is to convert markdown into slideshow.
 
-[![Build Status](https://secure.travis-ci.org/ogom/python-mcider.png?branch=master)](http://travis-ci.org/ogom/python-mcider)
-
 ![mcider](https://github.com/ogom/python-mcider/raw/master/mcider.png)
+
+### Examples of themes
+
+* [Google I/O 2012](http://ogom.github.com/mcider/examples/io2012/slide.html)
+* [Google I/O 2011](http://ogom.github.com/mcider/examples/io2011/slide.html)
 
 
 ## Installation
@@ -41,7 +44,25 @@ Theme is provided  io2012 and io2011. Select the option `-t`.
 
     $ mcider ./slide.md -t io2011
 
+[Extensions](http://freewisdom.org/projects/python-markdown/Available_Extensions) of markdown is the options `-x`.
+
+    $ mcider ./slide.md -x fenced_code tables
+
+
 See also `mcider --help`.
+
+
+## How to use
+### Output Hints
+
+Separates the slide is `---` or `___` or `***` be returned to hr tab at markdown.  
+io2012 or io2011 of the theme to change the class of article in the horizon. 
+
+ horizon |  article class
+-------- | --------------
+  ---    |  none
+  ___    |  smaller
+  ***    |  fill
 
 
 ## Examples
@@ -246,8 +267,12 @@ The converted html
 </article>
 ```
 
+
 ## Tests
-  make test
+
+    $ make test
+
+[![Build Status](https://secure.travis-ci.org/ogom/python-mcider.png?branch=master)](http://travis-ci.org/ogom/python-mcider)
 
 
 ## Uses

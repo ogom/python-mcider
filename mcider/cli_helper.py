@@ -23,7 +23,7 @@ parser.add_argument(
 )
 
 parser.add_argument(
-    '--extensions', '-e', metavar='EXTENSION', nargs='*',
+    '--extensions', '-x', metavar='EXTENSION', nargs='*',
     help='''
       Provided to expand the base syntax.
       (extra, fenced_code, tables, ...)
