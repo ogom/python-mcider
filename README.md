@@ -3,7 +3,7 @@ Mcider
 
 Mcider is to convert markdown into slideshow.
 
-![mcider](https://ogom.github.com/python-mcider/images/mcider.png)
+![mcider](http://ogom.github.com/python-mcider/images/mcider.png)
 
 ### Examples of themes
 
@@ -87,7 +87,7 @@ converted to the presenter note from markdown comment tag.
 </aside>
 ```
 
-![presenter](https://ogom.github.com/python-mcider/images/presenter.png)
+![presenter](http://ogom.github.com/python-mcider/images/presenter.png)
 
 
 ## Examples
