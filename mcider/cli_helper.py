@@ -41,6 +41,11 @@ parser.add_argument(
 )
 
 parser.add_argument(
+    '--presenter', action='store_true', default=False,
+    help='Presenter mode.'
+)
+
+parser.add_argument(
     '--themes', metavar='PATH',
     help='Path of the custom themes'
 )

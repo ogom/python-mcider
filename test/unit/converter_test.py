@@ -22,9 +22,14 @@ class ConverterTest(unittest.TestCase):
     def test_set_theme(self):
         self.assertEqual(self.slide.options['theme'], 'io2012')
 
-    def test_get_slide(self):
+    def test_get_slide_base(self):
         self.assertIsNotNone(self.slide._get_slide('io2012', self.contents, []))
         #print self.slide._get_slide('io2012', self.contents, []).encode('utf-8')
+
+    def test_get_slide_note(self):
+        contents = util.fs_reader(os.path.join(test_path, 'fixtures', 'note.md'))
+        self.assertIsNotNone(self.slide._get_slide('io2012', contents, []))
+        #print self.slide._get_slide('io2012', contents, []).encode('utf-8')
 
 if __name__ == '__main__':
     unittest.main()

@@ -3,7 +3,7 @@ Mcider
 
 Mcider is to convert markdown into slideshow.
 
-![mcider](https://github.com/ogom/python-mcider/raw/master/mcider.png)
+![mcider](https://ogom.github.com/python-mcider/images/mcider.png)
 
 ### Examples of themes
 
@@ -32,21 +32,25 @@ Simple, the file is output to the same directory as the markdown.
 
     $ mcider ./slide.md
 
-If you wanted to display the WEB browser with the option of `-b`.
+`-b` option is displayed in the web browser.
 
     $ mcider ./slide.md -b
 
-The output destination can be changed in the options `-o`.
+`-o` option to change the location to save the file.
 
     $ mcider ./slide.md -o /tmp/my.html
 
-Theme is provided  io2012 and io2011. Select the option `-t`.
+`-t` option to change the theme of the slide.
 
     $ mcider ./slide.md -t io2011
 
-[Extensions](http://freewisdom.org/projects/python-markdown/Available_Extensions) of markdown is the options `-x`.
+`-x` option to extend the markdown. [(Available Extensions)](http://freewisdom.org/projects/python-markdown/Available_Extensions)
 
     $ mcider ./slide.md -x fenced_code tables
+
+`--presenter` option is displayed in Presenter mode. Only theme `io2012`.
+
+    $ mcider ./slide.md -b --presenter
 
 
 See also `mcider --help`.
@@ -63,6 +67,27 @@ io2012 or io2011 of the theme to change the class of article in the horizon.
   ---    |  none
   ___    |  smaller
   ***    |  fill
+
+
+### I/O 2012
+
+#### Presenter note
+
+converted to the presenter note from markdown comment tag.
+
+```markdown
+<!--
+  write a note here.
+-->
+```
+
+```html
+<aside class="note">
+  write a note here.
+</aside>
+```
+
+![presenter](https://ogom.github.com/python-mcider/images/presenter.png)
 
 
 ## Examples
