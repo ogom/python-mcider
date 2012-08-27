@@ -34,7 +34,7 @@
 
 <p>Mcider is to convert markdown into slideshow.</p>
 
-<p><img src="https://github.com/ogom/python-mcider/raw/master/mcider.png" alt="mcider"></p>
+<p><img src="https://ogom.github.com/python-mcider/images/mcider.png" alt="mcider"></p>
 
 <h3>Examples of themes</h3>
 
@@ -60,29 +60,35 @@ $ make install
 
 <h2>Usage</h2>
 
+
 <p>Simple, the file is output to the same directory as the markdown.</p>
 
 <pre><code>$ mcider ./slide.md
 </code></pre>
 
-<p>If you wanted to display the WEB browser with the option of <code>-b</code>.</p>
+<p><code>-b</code> option is displayed in the web browser.</p>
 
 <pre><code>$ mcider ./slide.md -b
 </code></pre>
 
-<p>The output destination can be changed in the options <code>-o</code>.</p>
+<p><code>-o</code> option to change the location to save the file.</p>
 
 <pre><code>$ mcider ./slide.md -o /tmp/my.html
 </code></pre>
 
-<p>Theme is provided  io2012 and io2011. Select the option <code>-t</code>.</p>
+<p><code>-t</code> option to change the theme of the slide.</p>
 
 <pre><code>$ mcider ./slide.md -t io2011
 </code></pre>
 
-<p><a href="http://freewisdom.org/projects/python-markdown/Available_Extensions">Extensions</a> of markdown is the options <code>-x</code>.</p>
+<p><code>-x</code> option to extend the markdown. <a href="http://freewisdom.org/projects/python-markdown/Available_Extensions">(Available Extensions)</a></p>
 
 <pre><code>$ mcider ./slide.md -x fenced_code tables
+</code></pre>
+
+<p><code>--presenter</code> option is displayed in Presenter mode. Only theme <code>io2012</code>.</p>
+
+<pre><code>$ mcider ./slide.md -b --presenter
 </code></pre>
 
 <p>See also <code>mcider --help</code>.</p>
@@ -111,7 +117,27 @@ io2012 or io2011 of the theme to change the class of article in the horizon. </p
 <td>***</td>
 <td>fill</td>
 </tr>
-</table><h2>Examples</h2>
+</table>
+
+<h3>I/O 2012</h3>
+
+<h4>Presenter note</h4>
+
+<p>converted to the presenter note from markdown comment tag.</p>
+
+<pre lang="markdown"><code>&lt;!--
+  write a note here.
+--&gt;
+</code></pre>
+
+<div class="highlight"><pre><span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">"note"</span><span class="nt">&gt;</span>
+  write a note here.
+<span class="nt">&lt;/aside&gt;</span>
+</pre></div>
+
+<p><img src="https://ogom.github.com/python-mcider/images/presenter.png" alt="presenter"></p>
+
+<h2>Examples</h2>
 
 <h3>Theme of io2012</h3>
 
