@@ -57,10 +57,8 @@ class Slide():
         html = None
         if theme == 'io2011':
             html = self._get_slide_io2011(contents, extensions)
-        elif theme == 'io2012':
-            html = self._get_slide_io2012(contents, extensions)
         else:
-            html = self._get_slide_none(contents, extensions)
+            html = self._get_slide_io2012(contents, extensions)
         return html
 
     def _get_slide_none(self, contents=None, extensions=[]):
