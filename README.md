@@ -1,7 +1,7 @@
-Mcider
+mCider
 ======
 
-Mcider is to convert markdown into slideshow.
+mCider is markdown converter for slideshow.
 
 ![mcider](http://ogom.github.com/python-mcider/images/mcider.png)
 
@@ -10,64 +10,77 @@ Mcider is to convert markdown into slideshow.
 * [Google I/O 2012](http://ogom.github.com/python-mcider/examples/io2012/slide.html)
 * [Google I/O 2011](http://ogom.github.com/python-mcider/examples/io2011/slide.html)
 
-
 ## Installation
 
-    $ pip install mcider
+```
+$ pip install mcider
+```
 
 or
 
-    $ easy_install mcider
+```
+$ easy_install mcider
+```
 
 from source
 
-    $ git clone https://github.com/ogom/python-mcider.git
-    $ cd python-mcider
-    $ make install
-
+```
+$ git clone https://github.com/ogom/python-mcider.git
+$ cd python-mcider
+$ make install
+```
 
 ## Usage
 
 Simple, the file is output to the same directory as the markdown.
 
-    $ mcider ./slide.md
+```
+$ mcider ./slide.md
+```
 
 `-b` option is displayed in the web browser.
 
-    $ mcider ./slide.md -b
+```
+$ mcider ./slide.md -b
+```
 
 `-o` option to change the location to save the file.
 
-    $ mcider ./slide.md -o /tmp/my.html
+```
+$ mcider ./slide.md -o /tmp/my.html
+```
 
 `-t` option to change the theme of the slide.
 
-    $ mcider ./slide.md -t io2011
+```
+$ mcider ./slide.md -t io2011
+```
 
 `-x` option to extend the markdown. [(Available Extensions)](http://freewisdom.org/projects/python-markdown/Available_Extensions)
 
-    $ mcider ./slide.md -x fenced_code tables
+```
+$ mcider ./slide.md -x fenced_code tables
+```
 
 `--presenter` option is displayed in Presenter mode. Only theme `io2012`.
 
-    $ mcider ./slide.md -b --presenter
-
+```
+$ mcider ./slide.md -b --presenter
+```
 
 See also `mcider --help`.
-
 
 ## How to use
 ### Output Hints
 
-Separates the slide is `---` or `___` or `***` be returned to hr tab at markdown.  
-io2012 or io2011 of the theme to change the class of article in the horizon. 
+Separates the slide is `---` or `___` or `***` be returned to hr tab at markdown.
+io2012 or io2011 of the theme to change the class of article in the horizon.
 
  horizon |  article class
 -------- | --------------
   ---    |  none
   ___    |  smaller
   ***    |  fill
-
 
 ### I/O 2012
 
@@ -89,7 +102,6 @@ converted to the presenter note from markdown comment tag.
 
 ![presenter](http://ogom.github.com/python-mcider/images/presenter.png)
 
-
 ## Examples
 
 ### Theme of io2012
@@ -105,9 +117,9 @@ I/O 2012 slide example
 ### Simple slide with header and text
 Here is the text of hgroup.
 
-This is a slide with just text. This is a slide with just text.  
-This is a slide with just text. This is a slide with just text.  
-This is a slide with just text. This is a slide with just text.  
+This is a slide with just text. This is a slide with just text.
+This is a slide with just text. This is a slide with just text.
+This is a slide with just text. This is a slide with just text.
 
 There is more text just underneath.
 
@@ -116,9 +128,9 @@ ___
 ### Simple slide with header and text (small font)
 Here is the text of hgroup.
 
-This is a slide with just text. This is a slide with just text.  
-This is a slide with just text. This is a slide with just text.  
-This is a slide with just text. This is a slide with just text.  
+This is a slide with just text. This is a slide with just text.
+This is a slide with just text. This is a slide with just text.
+This is a slide with just text. This is a slide with just text.
 
 There is more text just underneath.
 
@@ -217,9 +229,9 @@ I/O 2011 slide example
 
 ### Simple slide with header and text
 
-This is a slide with just text. This is a slide with just text.  
-This is a slide with just text. This is a slide with just text.  
-This is a slide with just text. This is a slide with just text.  
+This is a slide with just text. This is a slide with just text.
+This is a slide with just text. This is a slide with just text.
+This is a slide with just text. This is a slide with just text.
 
 There is more text just underneath.
 
@@ -227,9 +239,9 @@ ___
 
 ### Simple slide with header and text (small font)
 
-This is a slide with just text. This is a slide with just text.  
-This is a slide with just text. This is a slide with just text.  
-This is a slide with just text. This is a slide with just text.  
+This is a slide with just text. This is a slide with just text.
+This is a slide with just text. This is a slide with just text.
+This is a slide with just text. This is a slide with just text.
 
 There is more text just underneath.
 
@@ -292,19 +304,20 @@ The converted html
 </article>
 ```
 
-
 ## Tests
 
-    $ make test
+```
+$ make test
+```
 
 [![Build Status](https://secure.travis-ci.org/ogom/python-mcider.png?branch=master)](http://travis-ci.org/ogom/python-mcider)
 
-
 ## Uses
+
 * [Python-Markdown](https://github.com/waylan/Python-Markdown)
 * [HTML5 slide template for Google I/O 2012](http://code.google.com/p/io-2012-slides/)
 * [HTML5 slide template for Google I/O 2011](http://code.google.com/p/html5slides/)
 
-
 ## Licence
+
 * [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
