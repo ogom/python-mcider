@@ -71,15 +71,15 @@ See also `mcider --help`.
 ## How to use
 ### Output Hints
 
-Separates the slide is `---` or `___` or `***` be returned to hr tab at markdown.
+Separates the slide is `----` or `____` or `****` be returned to hr tab at markdown.
 
 io2012 or io2011 of the theme to change the class of article in the horizon.
 
 | horizon | article class |
 |:-------:|:--------------|
-|  ---    |  none         |
-|  ___    |  smaller      |
-|  ***    |  fill         |
+|  ----   |  none         |
+|  ____   |  smaller      |
+|  ****   |  fill         |
 
 ### I/O 2012
 
