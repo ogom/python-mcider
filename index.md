@@ -5,11 +5,10 @@ title:  Overview
 
 mCider is markdown converter for slideshow.
 
-* [Examples of Google I/O 2012]({{ site.baseurl }}/examples/io2012/slide.html).
-* [Examples of Google I/O 2011]({{ site.baseurl }}/examples/io2011/slide.html).
+* [Examples of Google I/O 2012](http://ogom.github.com/python-mcider/examples/io2012/slide.html)
+* [Examples of Google I/O 2011](http://ogom.github.com/python-mcider/examples/io2011/slide.html)
 
-<style>img[alt=mcider] { margin-left: 60px;}</style>
-![mcider]({{ site.baseurl }}/assets/img/mcider.png)
+![mcider](http://ogom.github.io/python-mcider/assets/img/mcider.png)
 
 ## Installation
 
@@ -71,6 +70,39 @@ $ mcider ./slide.md -b --presenter
 
 See also `mcider --help`.
 
+## How to use
+### Output Hints
+
+Separates the slide is `----` or `____` or `****` be returned to hr tab at markdown.
+
+io2012 or io2011 of the theme to change the class of article in the horizon.
+
+| horizon | article class |
+|:-------:|:--------------|
+|  ----   |  none         |
+|  ____   |  smaller      |
+|  ****   |  fill         |
+
+### I/O 2012
+
+#### Presenter note
+
+converted to the presenter note from markdown comment tag.
+
+```
+<!--
+  write a note here.
+-->
+```
+
+```html
+<aside class="note">
+  write a note here.
+</aside>
+```
+
+![presenter](http://ogom.github.com/python-mcider/assets/img/presenter.png)
+
 ## Tests
 
 ```
@@ -87,4 +119,4 @@ $ make test
 
 ## Licence
 
-* [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+* MIT
