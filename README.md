@@ -3,8 +3,8 @@ mCider
 
 mCider is markdown converter for slideshow.
 
-* [Google I/O 2012](http://ogom.github.com/python-mcider/examples/io2012/slide.html)
-* [Google I/O 2011](http://ogom.github.com/python-mcider/examples/io2011/slide.html)
+* [Examples of Google I/O 2012](http://ogom.github.com/python-mcider/examples/io2012/slide.html)
+* [Examples of Google I/O 2011](http://ogom.github.com/python-mcider/examples/io2011/slide.html)
 
 ![mcider](http://ogom.github.io/python-mcider/assets/img/mcider.png)
 
@@ -54,7 +54,7 @@ $ mcider ./slide.md -o /tmp/my.html
 $ mcider ./slide.md -t io2011
 ```
 
-`-x` option to extend the markdown. [(Available Extensions)](http://freewisdom.org/projects/python-markdown/Available_Extensions)
+`-x` option to extend the markdown. [(Available Extensions)](https://pythonhosted.org/Markdown/extensions/index.html)
 
 ```
 $ mcider ./slide.md -x fenced_code tables
