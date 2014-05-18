@@ -1,7 +1,7 @@
 I/O 2012 slide example
 ======================
 
----
+----
 
 ### Simple slide with header and text
 Here is the text of hgroup.
@@ -12,7 +12,7 @@ This is a slide with just text. This is a slide with just text.
 
 There is more text just underneath.
 
-___
+____
 
 ### Simple slide with header and text (small font)
 Here is the text of hgroup.
@@ -23,7 +23,7 @@ This is a slide with just text. This is a slide with just text.
 
 There is more text just underneath.
 
-***
+****
 
 ### Image filling the slide (with optional header)
 Here is the text of hgroup.
