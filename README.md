@@ -3,10 +3,10 @@ mCider
 
 mCider is markdown converter for slideshow.
 
-* [Examples of Google I/O 2012](http://ogom.github.com/python-mcider/examples/io2012/slide.html)
-* [Examples of Google I/O 2011](http://ogom.github.com/python-mcider/examples/io2011/slide.html)
+* `----` is separate of the slides.
+* Adjust the slide to the size of the window.
 
-![mcider](http://ogom.github.io/python-mcider/assets/img/mcider.png)
+![mcider](http://ogom.github.com/python-mcider/assets/img/mcider.png)
 
 ## Installation
 
@@ -30,76 +30,61 @@ $ make install
 
 ## Usage
 
-Simple, the file is output to the same directory as the markdown.
+### Initializes
 
 ```
 $ mcider ./slide.md
 ```
 
-`-b` option is displayed in the web browser.
+Other [options](http://ogom.github.com/python-mcider/docs/usage/options.html).
+
+## Examples
+
+* [Examples of Google I/O 2012](http://ogom.github.com/python-mcider/examples/io2012/slide.html)
+* [Examples of Google I/O 2011](http://ogom.github.com/python-mcider/examples/io2011/slide.html)
+
+
+### Base Markdown
 
 ```
-$ mcider ./slide.md -b
+I/O 2012 slide example
+======================
+
+----
+
+### Simple slide with header and text
+Here is the text of hgroup.
+
+This is a slide with just text. This is a slide with just text.
 ```
 
-`-o` option to change the location to save the file.
-
-```
-$ mcider ./slide.md -o /tmp/my.html
-```
-
-`-t` option to change the theme of the slide.
-
-```
-$ mcider ./slide.md -t io2011
-```
-
-`-x` option to extend the markdown. [(Available Extensions)](https://pythonhosted.org/Markdown/extensions/index.html)
-
-```
-$ mcider ./slide.md -x fenced_code tables
-```
-
-`--presenter` option is displayed in Presenter mode. Only theme `io2012`.
-
-```
-$ mcider ./slide.md -b --presenter
-```
-
-See also `mcider --help`.
-
-## How to use
-### Output Hints
-
-Separates the slide is `----` or `____` or `****` be returned to hr tab at markdown.
-
-io2012 or io2011 of the theme to change the class of article in the horizon.
-
-| horizon | article class |
-|:-------:|:--------------|
-|  ----   |  none         |
-|  ____   |  smaller      |
-|  ****   |  fill         |
-
-### I/O 2012
-
-#### Presenter note
-
-converted to the presenter note from markdown comment tag.
-
-```markdown
-<!--
-  write a note here.
--->
-```
+### Converted HTML
 
 ```html
-<aside class="note">
-  write a note here.
-</aside>
-```
+<slide>
+  <hgroup>
+    <h1>
+      I/O 2012 slide example
+    </h1>
+  </hgroup>
+</slide>
 
-![presenter](http://ogom.github.com/python-mcider/assets/img/presenter.png)
+<slide>
+  <hgroup>
+    <h3>
+      Simple slide with header and text
+    </h3>
+    <p>
+      Here is the text of hgroup.
+    </p>
+  </hgroup>
+  <article class="none">
+    <p>
+      This is a slide with just text. This is a slide with just text.<br />
+    </p>
+  </article>
+</slide>
+```
 
 ## Tests
 
