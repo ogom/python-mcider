@@ -6,7 +6,8 @@ slide maker
 import os
 import shutil
 from markdown import Markdown
-import util
+from . import util
+
 
 class Slide():
     """ Create a slide from the content and theme. """
@@ -57,8 +58,10 @@ class Slide():
         html = None
         if theme == 'io2011':
             html = self._get_slide_io2011(contents, extensions)
-        else:
+        elif theme == 'io2012':
             html = self._get_slide_io2012(contents, extensions)
+        else:
+            html = self._get_slide_none(contents, extensions)
         return html
 
     def _get_slide_none(self, contents=None, extensions=[]):
@@ -114,11 +117,11 @@ class Slide():
         html = '\n'
         for slide in slides:
             html += '<slide>\n'
-            if slide.has_key('hgroup'):
+            if 'hgroup' in slide:
                 html += '<hgroup>\n'
                 html += md.convert(slide['hgroup']) + '\n'
                 html += '</hgroup>\n'
-            if slide.has_key('article'):
+            if 'article' in slide:
                 html += '<article class="' + slide['style'] + '">\n'
                 html += md.convert(slide['article']) + '\n'
                 html += '</article>\n'
@@ -164,7 +167,7 @@ class Slide():
         # from slides to html
         html = '\n'
         for slide in slides:
-            if slide.has_key('article'):
+            if 'article' in slide:
                 html += '<article class="' + slide['style'] + '">\n'
                 html += md.convert(slide['article']) + '\n'
                 html += '</article>\n\n'
