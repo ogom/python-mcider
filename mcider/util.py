@@ -1,7 +1,6 @@
 """ mcider - util
 Copyright(c) 2012-2014 ogom
 
-file reader or writer
 """
 import codecs
 import sys
