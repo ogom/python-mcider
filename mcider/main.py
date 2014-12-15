@@ -11,7 +11,6 @@ from . import cli_helper
 from . import converter
 from . import util
 
-
 def main():
     """ entry points """
     args = cli_helper.parser.parse_args()

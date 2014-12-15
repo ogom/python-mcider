@@ -17,7 +17,7 @@ def set_install_requires():
 
 setup(
     name='mcider',
-    version='0.2.1',
+    version='0.3.0',
     description='markdown converter for slideshow',
     license='MIT',
     url='http://ogom.github.com/python-mcider',
