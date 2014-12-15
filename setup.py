@@ -2,6 +2,7 @@ from setuptools import setup, find_packages
 import os
 import sys
 
+
 def find_data_files(path):
     data_files = []
     for root, dirs, files in os.walk(path):

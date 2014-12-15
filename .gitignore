@@ -33,3 +33,6 @@ pip-log.txt
 tmp
 works
 test/tmp/*
+
+# pyenv
+.python-version
