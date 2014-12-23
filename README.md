@@ -36,7 +36,7 @@ $ make install
 $ mcider ./slide.md
 ```
 
-Other [options](http://ogom.github.com/python-mcider/docs/usage/options.html).
+[Browse the documentation](http://ogom.github.com/python-mcider/docs).
 
 ## Examples
 
@@ -86,6 +86,10 @@ This is a slide with just text. This is a slide with just text.
 </slide>
 ```
 
+## Themes
+
+* [mCider Themes](https://github.com/ogom/mcider-themes)
+
 ## Tests
 
 ```
@@ -93,12 +97,6 @@ $ make test
 ```
 
 [![Build Status](https://secure.travis-ci.org/ogom/python-mcider.png?branch=master)](http://travis-ci.org/ogom/python-mcider)
-
-## Uses
-
-* [Python-Markdown](https://github.com/waylan/Python-Markdown)
-* [HTML5 slide template for Google I/O 2012](http://code.google.com/p/io-2012-slides/)
-* [HTML5 slide template for Google I/O 2011](http://code.google.com/p/html5slides/)
 
 ## Licence
 

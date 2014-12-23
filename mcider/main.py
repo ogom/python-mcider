@@ -23,7 +23,7 @@ def main():
         output_path = os.path.abspath(os.path.dirname(args.output.name))
         output_file = os.path.abspath(args.output.name)
 
-    _contents = args.file.read().decode('utf-8') if util.py2k else args.file.read()
+    _contents = args.file.read() if util.is_v3() else args.file.read().decode('utf-8')
     # slide options
     opts = {
         'themes': args.themes,
